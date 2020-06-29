@@ -76,3 +76,11 @@ The components are customizable and are created to react similar to the **non-Cy
 <p align="center" >
   <img src="https://github.com/sbis04/cyber_flutter/raw/master/screenshots/home_screen_dialog.png" alt="Cyber"/>
 </p>
+
+<p align="center" >
+  <img src="https://github.com/sbis04/cyber_flutter/raw/master/screenshots/dashboard_screen.png" alt="Cyber"/>
+</p>
+
+<p align="center" >
+  <img src="https://github.com/sbis04/cyber_flutter/raw/master/screenshots/credits_screen.png" alt="Cyber"/>
+</p>
