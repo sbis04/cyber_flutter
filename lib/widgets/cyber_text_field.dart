@@ -7,12 +7,14 @@ class CyberTextField extends StatefulWidget {
   final String hintText;
   final double height;
   final double width;
+  final bool isObscure;
 
   CyberTextField({
     this.controller,
     this.hintText,
     this.height,
     this.width,
+    this.isObscure = false,
   });
 
   @override
@@ -48,6 +50,7 @@ class _CyberTextFieldState extends State<CyberTextField> {
         height: widget.height != null ? widget.height : null,
         width: widget.width != null ? widget.width : screenWidth * 0.30,
         child: TextField(
+          obscureText: widget.isObscure,
           focusNode: _focus,
           controller: widget.controller,
           decoration: InputDecoration(

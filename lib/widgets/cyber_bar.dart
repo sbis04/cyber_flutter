@@ -25,7 +25,7 @@ class CyberBar extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           leading != null ? Expanded(child: leading) : Container(),
-          title,
+          title != null ? title : Container(),
           trailing != null ? Expanded(child: trailing) : Container(),
         ],
       ),

@@ -2,6 +2,10 @@ import 'package:cyber_flutter/theme/colors.dart';
 import 'package:flutter/material.dart';
 
 class ContainerBorderPainter extends CustomPainter {
+  final Color borderColor;
+
+  ContainerBorderPainter({this.borderColor});
+
   @override
   void paint(Canvas canvas, Size size) {
     // print(size);
@@ -12,7 +16,7 @@ class ContainerBorderPainter extends CustomPainter {
     double height = size.height;
 
     var borderPaint = Paint()
-      ..color = CyberColor.dimGray
+      ..color = borderColor != null ? borderColor : CyberColor.dimGray
       ..strokeWidth = 3
       ..style = PaintingStyle.stroke
       ..strokeCap = StrokeCap.round;

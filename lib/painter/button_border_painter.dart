@@ -5,10 +5,12 @@ import 'dart:math' as math;
 class ButtonBorderPainter extends CustomPainter {
   final bool isHovering;
   final bool isTapped;
+  final Color borderColor;
 
   ButtonBorderPainter({
     this.isHovering = false,
     this.isTapped = false,
+    this.borderColor,
   })  : assert(isHovering != null),
         assert(isTapped != null);
 
@@ -21,7 +23,7 @@ class ButtonBorderPainter extends CustomPainter {
     double height = size.height;
 
     var idleBorderPaint = Paint()
-      ..color = CyberColor.accentBlue
+      ..color = borderColor != null ? borderColor : CyberColor.accentBlue
       ..strokeWidth = 3
       ..style = PaintingStyle.stroke
       ..strokeCap = StrokeCap.round;

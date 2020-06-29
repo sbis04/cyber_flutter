@@ -7,6 +7,7 @@ class CyberContainer extends StatelessWidget {
   final double height;
   final double width;
   final bool disableBorder;
+  final Color borderColor;
 
   CyberContainer({
     this.child,
@@ -14,6 +15,7 @@ class CyberContainer extends StatelessWidget {
     this.height,
     this.width,
     this.disableBorder = false,
+    this.borderColor,
   }) : assert(disableBorder != null);
 
   @override
@@ -23,7 +25,9 @@ class CyberContainer extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(16.0),
         child: CustomPaint(
-          foregroundPainter: disableBorder ? null : ContainerBorderPainter(),
+          foregroundPainter: disableBorder
+              ? null
+              : ContainerBorderPainter(borderColor: borderColor),
           child: Container(
             color: color,
             height: height,

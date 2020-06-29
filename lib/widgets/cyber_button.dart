@@ -5,11 +5,13 @@ class CyberButton extends StatefulWidget {
   final Widget child;
   final Function() onPressed;
   final Function onLongPressed;
+  final Color borderColor;
 
   CyberButton({
     @required this.onPressed,
     this.onLongPressed,
     this.child,
+    this.borderColor,
   });
 
   @override
@@ -30,8 +32,11 @@ class _CyberButtonState extends State<CyberButton> {
   @override
   Widget build(BuildContext context) {
     return CustomPaint(
-      painter:
-          ButtonBorderPainter(isHovering: _isHovering, isTapped: _isTapped),
+      painter: ButtonBorderPainter(
+        isHovering: _isHovering,
+        isTapped: _isTapped,
+        borderColor: widget.borderColor,
+      ),
       child: GestureDetector(
         onTap: widget.onPressed,
         onTapDown: (details) => setState(() {

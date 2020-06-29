@@ -1,3 +1,4 @@
+import 'package:cyber_flutter/dashboard.dart';
 import 'package:cyber_flutter/theme/colors.dart';
 import 'package:cyber_flutter/widgets/cyber_bar.dart';
 import 'package:cyber_flutter/widgets/cyber_button.dart';
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Cyber Flutter',
       theme: ThemeData(
         brightness: Brightness.dark,
@@ -38,7 +40,7 @@ class HomePage extends StatelessWidget {
         child: CyberBar(
           backgroundColor: Colors.blueGrey[900],
           title: CyberText(
-            'Cyber Flutter',
+            'Cyber Widgets',
             textStyle: TextStyle(
               fontSize: 25,
               color: CyberColor.highlightBlue,
@@ -65,11 +67,16 @@ class HomePage extends StatelessWidget {
             CyberTextField(
               width: width * 0.6,
               hintText: 'Enter your access pass code',
+              isObscure: true,
             ),
             SizedBox(height: 50),
+            // SizedBox(height: 200),
             CyberButton(
               onPressed: () {
                 print('Cyber Button Pressed');
+                // Navigator.of(context).push(MaterialPageRoute(
+                //   builder: (context) => FirstScreen(),
+                // ));
                 showDialog(
                   context: context,
                   builder: (context) {
@@ -78,7 +85,9 @@ class HomePage extends StatelessWidget {
                       description: 'Entering into Cyberverse',
                       buttons: [
                         CyberButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.of(context).pop();
+                          },
                           child: Padding(
                             padding: const EdgeInsets.all(2.0),
                             child: CyberText(
@@ -90,7 +99,13 @@ class HomePage extends StatelessWidget {
                         ),
                         SizedBox(width: 20),
                         CyberButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (context) => Dashboard(),
+                              ),
+                            );
+                          },
                           child: Padding(
                             padding: const EdgeInsets.all(2.0),
                             child: CyberText(
