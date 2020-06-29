@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/sbis04/cyber_flutter/raw/master/screenshots/cyber_cover.gif" alt="Cyber Flutter"/>
+  <img width="1000" src="https://github.com/sbis04/cyber_flutter/raw/master/screenshots/cyber_cover.gif" alt="Cyber Flutter"/>
 </p>
 
 <h4 align="center">Introducing a new set of Flutter widgets called Cyber Widget</h4>
