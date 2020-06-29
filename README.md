@@ -1,16 +1,70 @@
-# cyber_flutter
+<p align="center">
+  <img src="https://github.com/sbis04/cyber_flutter/raw/master/screenshots/cyber_cover.gif" alt="Cyber Flutter"/>
+</p>
 
-A new Flutter project.
+<h4 align="center">Introducing a new set of Flutter widgets called Cyber Widget</h4>
 
-## Getting Started
+The design of these components are inspired from the UI designs created by **[Chris Kieffer](https://twitter.com/ChrisKEE4)** (UI designer for multiple well known movies like **Intersteller**, **Passengers** and also a really popular TV series known as **Westworld**).
 
-This project is a starting point for a Flutter application.
+**Cyber Widgets** are the recreated versions of the basic Flutter components, but with a nice *futuristic-look*. It consists of the following components:
 
-A few resources to get you started if this is your first Flutter project:
+* CyberScaffold
+* CyberBar
+* CyberText
+* CyberButton
+* CyberContainer
+* CyberTextField
+* CyberDialogBox
+* work is going on to include more components ...
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+**CustomPaint** widget is the main tool that I have used for creating these designs.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+This the components are still not prefect and work is going on to improve them.
+
+## Cyber Components
+
+The components are customizable and are created to react similar to the **non-Cyber** version of these widgets in the Widget Tree.
+
+### CyberScaffold
+
+<p align="center">
+  <img width="300" src="https://github.com/sbis04/cyber_flutter/raw/master/screenshots/scaffold.png" alt="Cyber"/>
+</p>
+
+### CyberBar
+
+<p align="center">
+  <img src="https://github.com/sbis04/cyber_flutter/raw/master/screenshots/app_bar.png" alt="Cyber"/>
+</p>
+
+### CyberText
+
+<p align="center">
+  <img src="https://github.com/sbis04/cyber_flutter/raw/master/screenshots/text.png" alt="Cyber"/>
+</p>
+
+### CyberButton
+
+<p align="center">
+  <img src="https://github.com/sbis04/cyber_flutter/raw/master/screenshots/button.png" alt="Cyber"/>
+</p>
+
+### CyberContainer
+
+<p align="center">
+  <img width="300" src="https://github.com/sbis04/cyber_flutter/raw/master/screenshots/container.png" alt="Cyber"/>
+</p>
+
+### CyberTextField
+
+<p align="center">
+  <img src="https://github.com/sbis04/cyber_flutter/raw/master/screenshots/text_field.png" alt="Cyber"/>
+</p>
+
+### CyberDialogBox
+
+<p align="center" >
+  <img src="https://github.com/sbis04/cyber_flutter/raw/master/screenshots/app_bar.png" alt="Cyber"/>
+</p>
+
+
