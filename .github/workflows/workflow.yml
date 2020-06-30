@@ -19,7 +19,10 @@ jobs:
           flutter-version: "1.17.x"
           channel: "beta"
       - name: Upgrades Flutter
-        run: flutter upgrade
+        run: |
+          git config --global user.name "Souvik Biswas"
+          git config --global user.email "sbis1999@gmail.com"
+          flutter upgrade
         working-directory: ./
       - name: Enable Web
         run: flutter config --enable-web
