@@ -19,7 +19,7 @@ The design of these components are inspired from the UI designs created by **[Ch
 
 **CustomPaint** widget is the main tool that I have used for creating these designs.
 
-This the components are still not prefect and work is going on to improve them.
+The components are still not prefect and work is going on to improve them. This will be available in a package format on **pub.dev** soon.
 
 ## Cyber Components
 
